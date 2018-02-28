@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -12,6 +13,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Custom styles -->
+     <link href="{{ asset('assets/multistepform/css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -77,5 +81,9 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-</body>
+    <script src="{{ asset('assets/lib/jquery/jquery-3.2.1.js') }}"></script>
+    <script src="{{ asset('assets/lib/jquery/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ asset('assets/multistepform/js/msform.js') }}"></script>
+  </body>
 </html>
+

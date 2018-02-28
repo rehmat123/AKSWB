@@ -25,7 +25,11 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $records = UserBasicInfo::getInstance()->getAll();
+        return view('Marriage.list',
+            [
+                'records'=>$records
+            ]);
     }
     public function create()
     {
